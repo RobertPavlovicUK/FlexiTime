@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Client</title>
+    <link href="css/default.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/SelectionBuffer.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $(document).on("click", "td", function () {
+
+                console.log($(this).parent());
+                SelectedOption.addToList(this);
+          //  console.log(SelectedOption.getList());
+            });
+        });
+    </script>
+</head>
+<body>
+    <div></div>
+
+
+
+    <nav class="navbar navbar-expand-sm nav-bg">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#"> LOGO</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+
+            </li>
+        </ul>
+        <div class="user-details">
+
+            <div class=" login-details">
+
+                <p><b>Robert Pavlovic</b></p>
+
+            </div>
+
+            <div class="small-user-info">
+
+                <div class="text-pos">
+                    <p><i>Manager</i></p>
+
+                </div>
+                <div class="text-org">
+
+                    <p><i>UEL Project</i></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+   
+    <div>
+
+        <div class="col-sm-2 side-area" style="background-color:#17111e; ">
+            <div class="button-area">
+
+                <p>TEST SAMK</p>
+                <p>TEST SAMK</p>
+                <p>TEST SAMK</p>
+                <p>TEST SAMK</p>
+                <p>TEST SAMK</p>
+                <p>TEST SAMK</p>
+                <p>TEST SAMK</p>
+                <p>TEST SAMK</p>
+
+            </div>
+
+
+        </div>
+        <div class="col-sm-8 content-area" style="background-color:#17111e;margin-left:20px;">
+
+
+            <table class="table table-dark ">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>7-8</th>
+                        <th>8-9</th>
+                        <th>9-10</th>
+                        <th>10-11</th>
+                        <th>11-12</th>
+                        <th>12-13</th>
+                        <th>13-14</th>
+                        <th>15-16</th>
+                        <th>16-17</th>
+                        <th>17-18</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Mo</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td></td>
+
+                    </tr>
+                    <tr>
+                        <th>Tu</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+
+                    </tr>
+                    <tr>
+                        <th>We</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+
+                    </tr>
+                    <tr>
+                        <th>Th</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+
+                    </tr>
+                    <tr>
+                        <th>Fr</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+
+                    </tr>
+                    <tr>
+                        <th>Sa</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+
+                    </tr>
+                    <tr>
+                        <th>Su</th>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        <div>
+            <p style="font-size:smaller">
+               Legend: " / " - Slot closed 
+            </p>
+        </div>
+            
+        </div>
+    </div> 
+    
+</body>
+</html>

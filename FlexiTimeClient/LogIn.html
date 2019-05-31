@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/default.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/string_values.js"></script>
+    <script src="js/EmployeeObject.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+                        
+            $(document).on("click", ".subbutton", function () {
+
+                var response;
+
+                console.log("called");
+                $.ajax({
+                    type: "POST",
+                    url: "http://" + currentIP + ":8080/FlexiTime/api/User/Login",
+                   dataType:"text",
+                   // Accept: "application/json",
+                    contentType: "application/json",
+                    data: $(".input-username").val() + "," + $(".input-password").val()
+                    ,
+                    success: function (response) {
+                        console.log(response);
+                        response = response;
+                        var responseSplit = response.split(",");
+                        if (responseSplit.length > 0 && response !== "Something went wrong please try again") {
+                            console.log(responseSplit[1]);
+                            console.log(responseSplit[3]);
+                            console.log(responseSplit[2]);
+                            var employee = new Employee(responseSplit[1], responseSplit[1], responseSplit[3], " ", " ", " ", responseSplit[2], " ", " ");
+                            employeStr = JSON.stringify(employee);
+                            sessionStorage.setItem("login", employeStr)
+                            console.log(employee.firstName);
+                            setTimeout(function () {
+                                
+                            window.location.pathname = '/MyApp/Timetables.html'
+                            }, 200)
+                        }
+
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log(jqXHR);
+                    }
+                });
+
+               
+            });
+        });
+
+    </script>
+    <title></title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm nav-bg">
+        <ul class="navbar-nav" style="margin: auto">
+            <li class="nav-item">
+                <center>
+
+                </center>
+            </li>
+            <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+                <h4 style="flex:auto"> Flexi Booking System</h4>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content">
+
+        
+            <div class="form-group">
+                <label >Username:</label>
+                <input placeholder="i.e: yourname@companyprefix" class="form-control input-username">
+            </div>
+            <div class="form-group">
+                <label >Password:</label>
+                <input type="password" class="form-control input-password">
+            </div>
+            <button class="btn btn-primary subbutton">Submit</button>
+        
+        </div>
+    </div>
+</body>
+</html>

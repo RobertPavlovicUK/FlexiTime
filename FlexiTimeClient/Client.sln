@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28306.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Client", "Client.jsproj", "{5ABBA3DB-531C-440E-8F15-D45B48772E42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4600CD0-58C8-4453-87FE-82E170AF9AE2}"
+	ProjectSection(SolutionItems) = preProject
+		index1.html = index1.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|ARM.ActiveCfg = Debug|ARM
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|ARM.Build.0 = Debug|ARM
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|ARM.Deploy.0 = Debug|ARM
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|ARM64.Build.0 = Debug|ARM64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|x64.ActiveCfg = Debug|x64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|x64.Build.0 = Debug|x64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|x64.Deploy.0 = Debug|x64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|x86.ActiveCfg = Debug|x86
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|x86.Build.0 = Debug|x86
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Debug|x86.Deploy.0 = Debug|x86
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|ARM.ActiveCfg = Release|ARM
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|ARM.Build.0 = Release|ARM
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|ARM.Deploy.0 = Release|ARM
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|ARM64.ActiveCfg = Release|ARM64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|ARM64.Build.0 = Release|ARM64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|ARM64.Deploy.0 = Release|ARM64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|x64.ActiveCfg = Release|x64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|x64.Build.0 = Release|x64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|x64.Deploy.0 = Release|x64
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|x86.ActiveCfg = Release|x86
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|x86.Build.0 = Release|x86
+		{5ABBA3DB-531C-440E-8F15-D45B48772E42}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36C516BC-2E04-4643-98CA-ECF21EEBBFDC}
+	EndGlobalSection
+EndGlobal

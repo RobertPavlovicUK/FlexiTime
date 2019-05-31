@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/default.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/string_values.js"></script>
+    <script src="js/EmployeeObject.js"></script>
+    <script src="js/SelectionBuffer.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+          
+           
+
+
+            
+
+
+            var x = $("#one").attr("data-original-title", organizationInfo)
+          
+            var shouldDelete = false;
+           
+            $(document).on("click", ".input-event", function () {
+                    if ($(this).val() === "") {
+                    shouldDelete = false;
+                   
+                }
+            });
+
+            $(document).on("click", ".btn", function () {
+                $("input").each(function () {
+
+                    if ($(this).val() === "") {
+                        $(this).addClass("error-shadow");
+                    }
+                });
+              
+
+            });
+
+            $("input").focusout(function () {
+                if ($(this).val() !== "") {
+                    $(this).removeClass("error-shadow");
+                }
+            });
+            
+            $(document).on("keyup", ".input-event", function () {
+            
+                var test = $(this).val();
+                
+
+                if ($(this).val() === "" && shouldDelete) {
+            
+
+                    $("li").each(function (i) {
+                      
+
+                        if ($("li").length - 1 == i) {
+                            this.remove();
+
+                            shouldDelete = false;
+                        }
+
+                    });
+                } else {
+                    if ($(this).val() !== "" && !shouldDelete) {
+                        addEmployeeHTML();
+                        shouldDelete = true;
+                    }
+                 
+                }
+
+            });
+        });
+
+
+
+        function addEmployeeHTML() {
+
+            var Div = `  <li class = "generated-field">
+                            <div class="form-group">
+                            <label class="label-block">Employee Name:</label>
+                                <div class="test">
+                            <input class="form-control input-event employee-field" type="text">
+                            <select name="cars" class="custom-select employee-field">
+
+                                <option  value="manager">Manager</option>
+                                <option selected value="employee">Employee</option>
+
+                            </select>
+                                </div>
+
+                            </div>
+                                </li>`
+
+            $("ol").append(Div);
+            window.scrollTo(0, document.body.scrollHeight);
+
+
+        }
+
+    </script>
+    <title></title>
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-sm nav-bg">
+    <ul class="navbar-nav" style="margin: auto">
+        <li class="nav-item">
+            <center>
+
+            </center>
+        </li>
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+            <h4 style="flex:auto"> Flexi Booking System</h4>
+        </li>
+    </ul>
+    </nav>
+    <div class="container">
+
+
+
+        <form>
+            <div class="first-container container-positioning">
+
+                <div class="form-group">
+                    <label class="label-block ">First Name:</label>
+                    <input type="text" class="form-control firstname">
+                </div>
+
+                <div class="form-group">
+                    <label class="label-block ">Organization Name:</label>
+                    <input type="text" class="form-control organization">
+                </div>
+                <div class="form-group  ">
+                    <label class="label-block ">Login prefix:</label>
+                    <input type="text" class="form-control prefix loginprefix">
+                </div>
+                <div class="form-group ">
+                    <label class="label-block ">Password:</label>
+                    <input type="password" class="form-control focus-event focus-event-first password">
+                </div>
+            </div>
+
+            <div class="second-container container-positioning">
+
+                <div class="form-group ">
+                    <label class="label-block ">Second Name:</label>
+                    <input type="text" class="form-control secondname">
+                </div>
+                <div class="form-group ">
+                    <label class="label-block">E-mail address:</label>
+                    <input type="text" class="form-control email">
+                </div>
+
+                <div class="form-group ">
+                    <label class="label-block">Tel.Num:</label>
+                    <input type="text" class="form-control telnum">
+                </div>
+                <div class="form-group">
+                    <label class="label-block ">Password:</label>
+                    <input type="password" class="form-control focus-event focus-event-second">
+                </div>
+            </div>
+
+
+            <ol>
+                <li>
+                    <div class="form-group">
+                        <label class="label-block">Employee Name:</label>
+                        <div class="test">
+                            <input class="form-control input-event employee-field generated" type="text">
+                            <select name="cars" class="custom-select employee-field">
+
+                                <option value="manager">Manager</option>
+
+
+                            </select>
+                        </div>
+
+                    </div>
+                </li>
+            </ol>
+
+            <button type="button" class="btn btn-primary btn-block fix-bot submit">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-8R6UB13</Machine>
+    <WindowsUser>pavlo</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>5abba3db-531c-440e-8f15-d45b48772e42</PackageIdentityName>
+    <PackageIdentityPublisher>CN=pavlo</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Projects\FlexiSystem\Client\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\Projects\FlexiSystem\Client\bin\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>165DB76F577008579D1D3718F5B895C0655108B9168ADC6841B854EE76EE3EBD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>5abba3db-531c-440e-8f15-d45b48772e42_1.0.0.0_neutral__8v0d3kjq9dh18</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>5abba3db-531c-440e-8f15-d45b48772e42_8v0d3kjq9dh18!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>5abba3db-531c-440e-8f15-d45b48772e42</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pavlo</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Projects\FlexiSystem\Client\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-11-21T16:48:12.204</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\index.html">
+      <PackagePath>index.html</PackagePath>
+      <Modified>2018-11-21T16:48:01.364</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\test.html">
+      <PackagePath>test.html</PackagePath>
+      <Modified>2018-11-19T16:28:57.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\registerCompany.html">
+      <PackagePath>registerCompany.html</PackagePath>
+      <Modified>2018-11-21T16:27:13.531</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\images\LockScreenLogo.scale-200.png">
+      <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2018-11-15T11:27:45.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\images\SplashScreen.scale-200.png">
+      <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-11-15T11:27:45.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-11-15T11:27:45.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-11-15T11:27:45.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-11-15T11:27:45.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-11-15T11:27:45.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-11-15T11:27:45.379</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\js\EmployeeObject.js">
+      <PackagePath>js\EmployeeObject.js</PackagePath>
+      <Modified>2018-11-18T18:12:14.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\js\main.js">
+      <PackagePath>js\main.js</PackagePath>
+      <Modified>2018-11-18T17:31:13.117</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\js\SelectionBuffer.js">
+      <PackagePath>js\SelectionBuffer.js</PackagePath>
+      <Modified>2018-11-21T16:29:05.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\js\string_values.js">
+      <PackagePath>js\string_values.js</PackagePath>
+      <Modified>2018-11-16T10:43:04.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\js\Timetable.js">
+      <PackagePath>js\Timetable.js</PackagePath>
+      <Modified>2018-11-21T16:48:03.230</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2018-11-21T15:50:44.993</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\textfile.txt">
+      <PackagePath>textfile.txt</PackagePath>
+      <Modified>2018-11-16T10:51:28.309</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Projects\FlexiSystem\Client\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2018-11-21T16:48:10.108</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

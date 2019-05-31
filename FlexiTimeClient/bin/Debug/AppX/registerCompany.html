@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/default.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/string_values.js"></script>
+    <script src="js/EmployeeObject.js"></script>
+  
+
+    <script>
+        $(document).ready(function () {
+            console.log("Start");
+            $('[data-toggle="tooltip"]').tooltip();
+
+
+            $(document).on("keyup", ".focus-event", function () {
+                console.log("test");
+                var firstPasswordField = $(".focus-event-first");
+                var secondPasswordField = $(".focus-event-second")
+                if ($(this).val() !== "") {
+
+                    if (secondPasswordField.val() === firstPasswordField.val()) {
+                        console.log("they match");
+                        $(".focus-event").removeClass("error-shadow");
+
+                    } else {
+                        console.log("they dont match");
+                        $(this).addClass("error-shadow");
+                    }
+
+                }
+                else {
+                    $(".focus-event").removeClass("error-shadow");
+
+                }
+
+            });
+
+
+            var x = $("#one").attr("data-original-title", organizationInfo)
+            console.log(x);
+            console.log();
+            console.log("finish");
+            var shouldDelete = false;
+            console.log(shouldDelete);
+            $(document).on("click", ".input-event", function () {
+                console.log($(this).val());
+                if ($(this).val() === "") {
+                    shouldDelete = false;
+                    console.log(shouldDelete + "??");
+                }
+            });
+
+            $(document).on("click", ".btn", function () {
+                $("input").each(function () {
+
+                    if ($(this).val() === "") {
+                        $(this).addClass("error-shadow");
+                    }
+                });
+            });
+
+            $("input").focusout(function () {
+                if ($(this).val() !== "") {
+                    $(this).removeClass("error-shadow");
+                }
+            });
+            $(document).on("keyup", "input", function () {
+                if ($(".firstname") !== "" && $(".secondname") !== "" && $(".prefix") !== "") {
+                    var firstField = $("generated");
+                    firstField.text($(".firstname") + $(".secondname") + "@" + $(".prefix"));
+                }//to finish automaticly generated field
+
+            });
+            $(document).on("keyup", ".input-event", function () {
+                console.log("hello")
+                var test = $(this).val();
+
+                console.log("Sad" + test);
+
+                if ($(this).val() === "" && shouldDelete) {
+                    console.log("asad");
+
+                    $("li").each(function (i) {
+                        console.log($("li").length)
+
+                        if ($("li").length - 1 == i) {
+                            this.remove();
+                            console.log("Test")
+                            shouldDelete = false;
+                        }
+
+                    });
+                } else {
+                    if ($(this).val() !== "" && !shouldDelete) {
+                        addEmployeeHTML();
+                        shouldDelete = true;
+                    }
+                    console.log(shouldDelete + "??");
+                }
+
+            });
+        });
+
+
+
+        function addEmployeeHTML() {
+
+            var Div = `  <li>
+                    <div class="form-group">
+                    <label class="label-block">Employee Name:</label>
+                        <div class:"test">
+                    <input class="form-control input-event employee-field" type="text">
+                    <select name="cars" class="custom-select employee-field">
+                        <option selected>Select position</option>
+                        <option value="manager">Manager</option>
+                        <option value="employee">Employee</option>
+
+                    </select>
+                        </div>
+
+                    </div>
+                        </li>`
+
+            $("ol").append(Div);
+            window.scrollTo(0, document.body.scrollHeight);
+
+
+        }
+
+    </script>
+    <title></title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm nav-bg">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#"> LOGO</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+
+
+        <form>
+            <div class="first-container container-positioning">
+
+                <div class="form-group">
+                    <label class="label-block firstname">First Name:</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label class="label-block organization">Organization Name:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="label-block">Login prefix:</label>
+                    <input type="text" class="form-control prefix">
+                </div>
+                <div class="form-group">
+                    <label class="label-block">Password:</label>
+                    <input type="password" class="form-control focus-event focus-event-first">
+                </div>
+            </div>
+
+            <div class="second-container container-positioning">
+
+                <div class="form-group">
+                    <label class="label-block secondname">Second Name:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="label-block">E-mail address:</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label class="label-block">Tel.Num:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="label-block ">Password:</label>
+                    <input type="password" class="form-control focus-event focus-event-second">
+                </div>
+            </div>
+
+
+            <ol>
+                <li>
+                    <div class="form-group">
+                        <label class="label-block">Employee Name:</label>
+                        <div class:"test">
+                            <input class="form-control input-event employee-field generated" type="text">
+                            <select name="cars" class="custom-select employee-field">
+                                
+                                <option value="manager">Manager</option>
+                               
+
+                            </select>
+                        </div>
+
+                    </div>
+                </li>
+            </ol>
+
+            <button type="button" class="btn btn-primary btn-block fix-bot">Submit</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

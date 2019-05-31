@@ -1,0 +1,3 @@
+﻿References for later use
+ Hoverover input field requires js initialization
+ <input id="one" type="text" class="form-control" value="hello" data-toggle="tooltip" data-placement="right" data-original-title="" >
