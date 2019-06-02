@@ -1,5 +1,5 @@
 # FlexiTime : Course Project
-Web application using where you book working slots for Flexible contract workers that cab be managed by organization managers.
+Web application where companies can register book working slots for Flexible contract workers that cab be managed by organization managers.
 
 # What I learned?
 - JavaScript/JQuery
